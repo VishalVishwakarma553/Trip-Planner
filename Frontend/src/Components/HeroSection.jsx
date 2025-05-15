@@ -8,7 +8,7 @@ const HeroSection = ({scroll}) => {
     if(scroll){
       const element = document.getElementById("popular-destinations")
       if(element){
-        element.scrollIntoView({behaviour: "smooth", block:"start"})
+        element.scrollIntoView({behavior: "smooth", block:"start"})
       }
     }
   },[scroll])
