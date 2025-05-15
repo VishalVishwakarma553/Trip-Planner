@@ -71,7 +71,7 @@ const TripDetails = () => {
       );
 
       const fetchingData = await response.json();
-      const parsedData = JSON.parse(fetchingData.choices[0].message.content)
+      const parsedData = JSON.parse(fetchingData?.choices[0]?.message?.content)
       setData(parsedData);
       dispatch(setTrip(parsedData));
     };
